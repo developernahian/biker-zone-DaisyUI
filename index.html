@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biker Zone</title>
-        <!-- DaisyUI link -->
+    <!-- DaisyUI link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -14,9 +14,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind custom classes -->
     <script>
@@ -24,27 +27,26 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-              'bike-primary': '#E76F51',
-            }
-          }
-        }
-      }
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.1)",
+            },
+          },
+        },
+      };
     </script>
 
     <!-- Custom CSS style -->
-     <style>
-      .font-poppins{
+    <style>
+      .font-poppins {
         font-family: "Poppins", sans-serif;
       }
-     </style>
+    </style>
   </head>
-
-
 
   <body class="font-poppins">
     <!-- TODO: Header section -->
-    <header class="md:container md:mx-auto" >
+    <header class="md:container md:mx-auto">
       <!-- TODO: Nav Section -->
       <nav>
         <div class="navbar bg-base-100">
@@ -76,7 +78,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl">Biker Zone</a>
+            <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-base">
@@ -92,7 +94,105 @@
         </div>
       </nav>
 
-      <!-- TODO: Banner Section -->
+      <!-- TODO: Slider or Carousel Section -->
+
+      <div class="carousel w-full bg-bike-primary-bg lg:h-[550px]">
+        <!-- todo slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row gap-20 lg:p-24 p-4">
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride-on R15 V4 <br> with Smile
+              </h2>
+              <p>Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike1.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- todo slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row gap-20 lg:p-24 p-4">
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride-on R15 V4 <br> with Smile
+              </h2>
+              <p>Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike2.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- TODO Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row gap-20 lg:p-24 p-4">
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride-on R15 V4 <br> with Smile
+              </h2>
+              <p>Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike3.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- TODO Slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row gap-20 lg:p-24 p-4">
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride-on R15 V4 <br> with Smile
+              </h2>
+              <p>Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike4.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main></main>
